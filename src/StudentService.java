@@ -23,4 +23,22 @@ public class StudentService {
     public List<Student> getAllStudents() {
         return students;
     }
+
+
+
+    public List<Student> searchStudents(String togriKeladiganNimadur) {
+        List<Student> result = new ArrayList<>();
+        for (Student student : students) {
+            if (student.getIsm().contains(togriKeladiganNimadur) ||
+                    student.getFamilya().contains(togriKeladiganNimadur) ||
+                    student.getHobbies().toString().contains(togriKeladiganNimadur)) {
+                result.add(student);
+            }
+        }
+        return result;
+    }
+
 }
+
+
+

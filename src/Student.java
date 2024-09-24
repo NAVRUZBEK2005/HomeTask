@@ -1,30 +1,30 @@
 public class Student {
-   private String FIrstName;
-   private String LastName;
-   private int birthday;
-   private String hobbies;
+    private String ism;
+    private String familya;
+    private int birthday;
+    private String hobbies;
 
-   public Student(String firstName, String lastName, int birthday, String hobbies) {
-       this.FIrstName = firstName;
-       this.LastName = lastName;
-       this.birthday = birthday;
-       this.hobbies = hobbies;
-   }
-
-    public String getFIrstName() {
-        return FIrstName;
+    public Student(String ism, String familya, int birthday, String hobbies) {
+        this.ism = ism;
+        this.familya = familya;
+        this.birthday = birthday;
+        this.hobbies = hobbies;
     }
 
-    public void setFIrstName(String FIrstName) {
-        this.FIrstName = FIrstName;
+    public String getIsm() {
+        return ism;
     }
 
-    public String getLastName() {
-        return LastName;
+    public void setIsm(String ism) {
+        this.ism = ism;
     }
 
-    public void setLastName(String lastName) {
-        LastName = lastName;
+    public String getFamilya() {
+        return familya;
+    }
+
+    public void setFamilya(String familya) {
+        this.familya = familya;
     }
 
     public int getBirthday() {
